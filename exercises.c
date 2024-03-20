@@ -123,7 +123,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena) 
 {
-  Stack* Pila = create_stack();
+  Stack* pila = create_stack();
   char *dato = cadena;
 
   while(*dato != '\0')
