@@ -549,3 +549,20 @@ exercises.c:108:10: error: implicit declaration of function ‘isEmpty’ [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 8b13459
+Wed 20 Mar 2024 11:04:35 PM UTC: 
+ exercises.c | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:112:23: error: expected ‘)’ before ‘;’ token
+  112 |     push(P2, pop(temp);
+      |         ~             ^
+      |                       )
+exercises.c:112:24: error: expected ‘;’ before ‘}’ token
+  112 |     push(P2, pop(temp);
+      |                        ^
+      |                        ;
+  113 | }
+      | ~                       
+Compilation failed
+a987da7
