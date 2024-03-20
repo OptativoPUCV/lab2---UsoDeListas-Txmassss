@@ -290,3 +290,14 @@ exercises.c:90:8: error: invalid use of incomplete typedef ‘List’
       |        ^
 Compilation failed
 ffd381a
+Wed 20 Mar 2024 09:00:44 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:90:13: error: comparison between pointer and integer [-Werror]
+   90 |     if(dato == elem)
+      |             ^~
+cc1: all warnings being treated as errors
+Compilation failed
+3eb13ec
