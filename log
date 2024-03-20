@@ -2,3 +2,27 @@ Wed 20 Mar 2024 08:20:29 PM UTC:
  tests:  0|5
 total_score: 0/70
 16022e4
+Wed 20 Mar 2024 08:23:43 PM UTC: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:57:29: error: passing argument 1 of ‘strlen’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   57 |   for(int i = 0; i < strlen(L) + 1; i++)
+      |                             ^
+      |                             |
+      |                             List *
+In file included from test.c:3:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/string.h:407:35: note: expected ‘const char *’ but argument is of type ‘List *’
+  407 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+In file included from test.c:5:
+exercises.c:59:16: error: invalid use of undefined type ‘struct List’
+   59 |       suma += L[i];
+      |                ^
+exercises.c:59:15: error: invalid use of incomplete typedef ‘List’
+   59 |       suma += L[i];
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+0bd53c9
