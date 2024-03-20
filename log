@@ -527,3 +527,14 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 a1420c8
+Wed 20 Mar 2024 10:53:30 PM UTC: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:108:10: error: implicit declaration of function ‘is_empty’ [-Werror=implicit-function-declaration]
+  108 |   while(!is_empty(P1))
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+699969d
