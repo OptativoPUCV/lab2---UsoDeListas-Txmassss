@@ -193,3 +193,35 @@ exercises.c:87:7: error: unused variable ‘current’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7267fa2
+Wed 20 Mar 2024 08:51:19 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:90:9: error: invalid use of undefined type ‘struct List’
+   90 |     if(L[i] == elem)
+      |         ^
+exercises.c:90:8: error: invalid use of incomplete typedef ‘List’
+   90 |     if(L[i] == elem)
+      |        ^
+exercises.c:92:18: error: invalid use of undefined type ‘struct List’
+   92 |       current = L[i];
+      |                  ^
+exercises.c:92:17: error: invalid use of incomplete typedef ‘List’
+   92 |       current = L[i];
+      |                 ^
+exercises.c:93:18: error: expected expression before ‘List’
+   93 |       popCurrent(List *L)
+      |                  ^~~~
+exercises.c:93:26: error: expected ‘;’ before ‘}’ token
+   93 |       popCurrent(List *L)
+      |                          ^
+      |                          ;
+   94 |     }
+      |     ~                     
+exercises.c:87:7: error: variable ‘current’ set but not used [-Werror=unused-but-set-variable]
+   87 |   int current;
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+58b45da
