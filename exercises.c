@@ -138,7 +138,10 @@ int parentesisBalanceados(char *cadena)
           return 0;
         
       }
+     dato++; 
     }
-  dato++;
+    if (stack->top != NULL) 
+      return 0;
+    return 1; 
 }
 
