@@ -43,6 +43,7 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
+    
    return L;
 }
 
@@ -54,10 +55,13 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) 
 {
   int suma = 0;
-  int size = get_size(*L);  
+  int size = get_size(L);  
+  int *dato = first(L);
   for(int i = 0; i < size; i++)
-      suma += L[i];
-    
+    {  
+      suma += *dato;
+      *dato = next(L);
+    }  
    return suma;
 }
 
