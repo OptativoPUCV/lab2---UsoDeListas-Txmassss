@@ -81,8 +81,18 @@ Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
-void eliminaElementos(List*L, int elem){
-
+void eliminaElementos(List*L, int elem)
+{
+  int size = get_size(L);
+  int current;
+  for(int i = 0; i < size; i++)
+  {
+    if(L[i] == elem)
+    { 
+      current = L[i];
+      popCurrent(L, current);
+    }
+  }
 }
 
 /*
