@@ -60,7 +60,7 @@ int sumaLista(List *L)
   for(int i = 0; i < size; i++)
     {  
       suma += *dato;
-      *dato = next(L);
+      dato = (int *)next(L);
     }  
    return suma;
 }
