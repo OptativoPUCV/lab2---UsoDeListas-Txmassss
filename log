@@ -584,3 +584,14 @@ Wed 20 Mar 2024 11:06:04 PM UTC:
  tests:  3|2
 total_score: 40/70
 3b6ca86
+Wed 20 Mar 2024 11:08:07 PM UTC: 
+ exercises.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:113:5: error: implicit declaration of function ‘destroy_stack’ [-Werror=implicit-function-declaration]
+  113 |     destroy_stack(aux);
+      |     ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1c90961
