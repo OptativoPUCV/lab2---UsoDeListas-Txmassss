@@ -261,3 +261,19 @@ exercises.c:93:18: error: expected expression before ‘List’
       |                  ^~~~
 Compilation failed
 c535016
+Wed 20 Mar 2024 08:51:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:90:9: error: invalid use of undefined type ‘struct List’
+   90 |     if(L[i] == elem)
+      |         ^
+exercises.c:90:8: error: invalid use of incomplete typedef ‘List’
+   90 |     if(L[i] == elem)
+      |        ^
+exercises.c:93:18: error: invalid use of incomplete typedef ‘List’
+   93 |       popCurrent(*L);
+      |                  ^~
+Compilation failed
+e4329c5

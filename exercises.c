@@ -90,7 +90,7 @@ void eliminaElementos(List*L, int elem)
     if(L[i] == elem)
     { 
       
-      popCurrent(List *L);
+      popCurrent(*L);
     }
   }
 }
