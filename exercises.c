@@ -131,11 +131,13 @@ int parentesisBalanceados(char *cadena)
         push(pila, &cadena[i]);
 
       else if(cadena[i] == ')')
+      {  
         if(top(pila)==NULL)
           return 0;
           
         else
-          pop(pila);   
+          pop(pila);
+      }
     }
   if(top(pila)!= NULL)
     return 0;
