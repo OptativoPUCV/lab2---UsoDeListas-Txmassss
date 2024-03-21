@@ -852,3 +852,19 @@ Thu 21 Mar 2024 12:08:45 AM UTC:
  tests:  7|1
 total_score: 60/70
 c83d19e
+Thu 21 Mar 2024 12:10:42 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:66: error: expected statement before ‘)’ token
+  131 |       if(cadena[i] == '('|| cadena[i] == '[' || cadena[i] == '{'))
+      |                                                                  ^
+exercises.c:134:7: error: ‘else’ without a previous ‘if’
+  134 |       else if(cadena[i] == ')'|| cadena[i] == ']' || cadena[i] == '}'))
+      |       ^~~~
+exercises.c:134:71: error: expected statement before ‘)’ token
+  134 |       else if(cadena[i] == ')'|| cadena[i] == ']' || cadena[i] == '}'))
+      |                                                                       ^
+Compilation failed
+59e3f04
