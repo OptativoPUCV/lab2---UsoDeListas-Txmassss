@@ -792,3 +792,14 @@ exercises.c:133:14: error: suggest explicit braces to avoid ambiguous ‘else’
 cc1: all warnings being treated as errors
 Compilation failed
 44ef2f4
+Thu 21 Mar 2024 12:05:12 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:133:14: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+  133 |       else if(cadena[i] == ')')
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+ce0545c
