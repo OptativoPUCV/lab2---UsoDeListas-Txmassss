@@ -777,3 +777,18 @@ exercises.c:143:12: error: invalid use of incomplete typedef ‘Stack’ {aka �
 cc1: all warnings being treated as errors
 Compilation failed
 5a9b67d
+Thu 21 Mar 2024 12:05:02 AM UTC: 
+ exercises.c | 24 +++++++++++-------------
+ 1 file changed, 11 insertions(+), 13 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:134:16: error: ‘P’ undeclared (first use in this function)
+  134 |         if(top(P)==NULL)
+      |                ^
+exercises.c:134:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:133:14: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+  133 |       else if(cadena[i] == ')')
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+44ef2f4
